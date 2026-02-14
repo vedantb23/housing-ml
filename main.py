@@ -25,7 +25,7 @@ for train_index, test_index in split.split(housing, housing['income_cat']):
     strat_train_set = housing.loc[train_index].drop("income_cat", axis=1) # We will work on this data
     strat_test_set = housing.loc[test_index].drop("income_cat", axis=1) # Set aside the test data
 
-# We will work on the copy of training data 
+#  work on the copy of training data 
 housing = strat_train_set.copy()
 
 # 3. Seperate features and labels
